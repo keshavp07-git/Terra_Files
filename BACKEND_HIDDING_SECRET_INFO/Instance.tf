@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
   provisioner "local-exec" {
     command = "echo ${self.private_ip} >> public_ip.txt" # command to execute in local machine
     # command is used to get the public ip of the instance and store it in a file
-
+    
   }
 
 }
